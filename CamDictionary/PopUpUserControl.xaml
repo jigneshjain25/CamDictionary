@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="CamDictionary.PopUpUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CamDictionary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="15,0,-15,0">
+
+    <Grid Width= "350" Background="#FF321422" Margin="-2,0.333,2,-0.333" Opacity="0.8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"  x:Name="meaning"  Margin="5" Text="This is where meaning comes" TextWrapping="Wrap" Foreground="#FFFBFAFA" FontSize="18" Canvas.ZIndex="999"/>
+        <!--<TextBlock Grid.Row="1"  x:Name="moreOptions" Margin="5" Text="more options" HorizontalAlignment="Right"/>-->
+    </Grid>
+    <!--
+        <StackPanel x:Name="LayoutRoot" Width="300" MaxHeight="100"  Background="LightBlue"
+                    Height ="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight}">
+        
+        
+        </StackPanel>
+        -->
+</Page>       
